@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.1.2/esm/ionicons.min.js"
+      integrity="sha512-2ySmquu6HK3CAvwLllh0R8K8buFPMZsUwWLZIlB7WW8c8ilUtoNyhsmEsQn2U0IV1USr2Oc/9DJzlr4cxAbuxA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="outline-main" id="captureArea">
+      <div class="header">
+        <div class="header-top">
+          <p class="time">12:20</p>
+          <p class="icon">
+            <span class="material-symbols-outlined"> signal_cellular_alt </span>
+            <span class="material-symbols-outlined"> wifi </span>
+            <i class="fa-solid fa-battery-full"></i>
+            <ion-icon name="battery-dead-outline"></ion-icon>
+          </p>
+        </div>
+        <div class="check">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="caption-trader">
+          <h1 class="title1">Bạn đã chuyển tiền thành công</h1>
+          <h1 class="title2">450,000 VND</h1>
+          <button><i class="fa-solid fa-share-nodes"></i> Chia sẻ</button>
+        </div>
+
+        <div class="user-trader">
+          <p class="to-account">Đến tài khoản</p>
+          <div class="layout-trader">
+            <img src="./icon.jpg" alt="" />
+            <div class="infor">
+              <h1 class="name" id="nguoi_nhan">LE HONG NHAN</h1>
+              <h1 class="id-stk" id="stk-nguoiNhan">66880209102006</h1>
+              <h1 class="id-nh">Quân Đội (MB)</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-trader">
+        <div class="ctn1">
+          <h1 class="ctn-title">Tài khoản nguồn</h1>
+          <div class="user-ctn1">
+            <h1 class="stk_nguoi_gui">1002042007</h1>
+            <h1 class="ten_nguoi_gui">LE GIA LINH</h1>
+          </div>
+        </div>
+        <div class="ctn1">
+          <h1 class="ctn-title">Nội dung</h1>
+          <h1 class="ctn-user" id="main-massage">LE GIA LINH chuyen khoan</h1>
+        </div>
+        <div class="ctn1">
+          <h1 class="ctn-title">Thời gian</h1>
+          <h1 class="ctn-user" id="update-day">12:20:19, 25/06/2023</h1>
+        </div>
+        <div class="ctn1">
+          <h1 class="ctn-title">Hình thức chuyển</h1>
+          <h1 class="ctn-user">Trong MB</h1>
+        </div>
+        <div class="ctn1">
+          <h1 class="ctn-title">Mã giao dịch</h1>
+          <h1 class="ctn-user" id="trader-id">f59959dqwdq5959</h1>
+        </div>
+      </div>
+      <div class="button-user">
+        <button>
+          <i class="fa-regular fa-circle-user"></i> Lưu người thụ hưởng
+        </button>
+        <button>
+          <span class="material-symbols-outlined"> receipt_long </span>
+          Lưu mẫu giao dịch
+        </button>
+      </div>
+      <div class="button-out">
+        <button>Về trang chủ</button>
+        <button>Tạo giao dịch khác</button>
+      </div>
+    </div>
+
+    <div class="form">
+      <input
+        type="text"
+        placeholder="nhập tên tài khoản người gửi"
+        id="name-send"
+      />
+      <input type="text" id="name" placeholder="stk người gửi" id="stk-send" />
+      <input type="text" id="nam-receive" placeholder="tên người nhân" />
+      <input type="text" id="stk-receive" placeholder="stk người nhận" />
+      <input
+        type="text"
+        id="money-trader"
+        placeholder="nhập số tiền cần chuyển"
+      />
+      <input type="text" id="noi_dung_ck" placeholder="nd ck" />
+      <input type="text" id="font-size" placeholder="Nhap kich co chu" />
+
+      <button id="done">done</button>
+      <button id="captureBtn">Capture</button>
+      <a id="download-link" style="display: none; color: black">Tải xuống</a>
+    </div>
+
+    <script type="module" src="main.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  </body>
+</html>

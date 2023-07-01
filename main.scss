@@ -1,0 +1,317 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@mixin display() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  min-height: 150vh;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.outline-main {
+  height: 100vh;
+  background: #444654;
+  background: white;
+  background: #efeeee;
+  border-bottom: 1px solid black;
+}
+.header {
+  width: 100%;
+  height: 315px;
+  background-image: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -20px;
+  border-radius: 0 0 25px 25px;
+  position: relative;
+  .header-top {
+    padding-top: 12px;
+    @include display();
+    justify-content: space-between;
+    .time {
+      font-size: 15px;
+      color: white;
+      font-weight: 420;
+      padding: 5px 30px;
+    }
+    .icon {
+      color: white;
+      font-weight: 500;
+      font-weight: 420;
+      padding-right: 15px;
+      @include display();
+      span {
+        @include display();
+        font-size: 18px;
+        margin: 0 2px;
+        font-size: 20px;
+      }
+      .fa-solid {
+        margin: 0 5px;
+        @include display();
+        font-size: 20px;
+      }
+    }
+  }
+  .check {
+    @include display();
+    .fa-solid {
+      font-size: 20px;
+      width: 48px;
+      height: 48px;
+      @include display();
+      background: white;
+      border-radius: 100%;
+    }
+  }
+  .caption-trader {
+    margin-top: 20px;
+    @include display();
+    flex-direction: column;
+    .title1 {
+      text-align: center;
+      font-size: 13.5px;
+      color: white;
+      font-weight: normal;
+      letter-spacing: 1px;
+    }
+    .title2 {
+      letter-spacing: 2px;
+      margin-top: 5px;
+      text-align: center;
+      font-size: 30px;
+      color: white;
+      font-weight: normal;
+      font-weight: bold;
+      font-size: 40px;
+      letter-spacing: 2.5px;
+      margin-top: 10px;
+    }
+    button {
+      margin-top: 20px;
+      width: 130px;
+      height: 35px;
+      border-radius: 30px;
+      outline: none;
+      border: none;
+      background: white;
+      font-size: 16px;
+      .fa-solid {
+        padding-right: 15px;
+      }
+      color: blue;
+      color: #33518d;
+    }
+  }
+  .user-trader {
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    height: 110px;
+    position: absolute;
+    background: black;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    transform: translateY(-5%);
+    border-radius: 15px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.144) 0px 5px 15px;
+
+    .to-account {
+      padding: 20px 10px;
+      padding-bottom: 0px;
+      font-size: 14px;
+      color: #989898;
+    }
+    .layout-trader {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+      padding: 0 5px;
+      overflow: hidden;
+      .infor {
+        padding-left: 8px;
+      }
+      img {
+        height: 18px;
+        margin-right: 10px;
+      }
+      .name {
+        font-size: 17px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 20px;
+        line-height: 18px;
+      }
+      .id-nh,
+      .id-stk {
+        line-height: 18px;
+        font-weight: 400;
+        font-size: 15px;
+        font-weight: 5000;
+      }
+    }
+  }
+}
+.container-trader {
+  overflow: hidden;
+  width: 90%;
+  min-height: 200px;
+  background: white;
+  margin: 0 auto;
+  margin-top: 61px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.147) 0px 5px 15px;
+  padding: 0px;
+  padding-top: 7px;
+  padding-bottom: 14px;
+  .ctn1 {
+    padding: 10px 10px;
+    @include display();
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+    .user-ctn1 {
+      h1 {
+        font-size: 14.5px;
+        font-weight: 500;
+        text-align: right;
+        &:nth-child(2) {
+          font-size: 16px;
+          font-weight: bold;
+          font-size: 15px;
+        }
+      }
+    }
+    .ctn-title {
+      font-size: 14px;
+      color: #828282;
+    }
+    .ctn-user {
+      font-weight: 600;
+
+      height: 100%;
+      width: 150px;
+      font-weight: 550;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      text-align: right;
+    }
+
+    &:nth-child(2),
+    &:nth-child(1) {
+      height: 50px;
+    }
+    &:nth-child(3),
+    &:nth-child(5),
+    &:nth-child(4) {
+      height: 28px;
+    }
+  }
+}
+
+.button-user {
+  @include display();
+  justify-content: space-around;
+  justify-content: center;
+  margin-top: 16px;
+  button {
+    background: white;
+    border: 0px;
+    background: none;
+    width: 170px;
+    border: 1px solid black;
+    display: block;
+    font-size: 13px;
+    @include display();
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #d0cfd4;
+    background: white;
+    color: #2e434e;
+    color: #526474;
+    font-size: 12px;
+    & + button {
+      margin-left: 10px;
+    }
+  }
+  button {
+    color: #2e434e;
+    color: #526474;
+    font-weight: 55550;
+    .fa-regular {
+      font-size: 18px;
+      margin-right: 2px;
+    }
+  }
+}
+.button-out {
+  margin-top: 20px;
+  @include display();
+  justify-content: center;
+  button {
+    width: 160px;
+    height: 50px;
+    border-radius: 5px;
+    display: block;
+    font-size: 15px;
+    border: none;
+    background: none;
+    &:nth-child(1) {
+      background: white;
+      border: 1px solid #414e68;
+      color: #414e68;
+      width: 170px;
+      margin-right: 15px;
+    }
+    &:nth-child(2) {
+      color: white;
+      background: #294c9e;
+      width: 170px;
+    }
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  button,
+  input {
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+  }
+}
+.outline-main {
+  position: relative;
+}
+.outline-main::before {
+  content: " ";
+  position: absolute;
+  width: 150px;
+  height: 5px;
+  background: black;
+  bottom: 5px;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+

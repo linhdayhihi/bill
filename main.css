@@ -1,0 +1,336 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 150vh;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.outline-main {
+  height: 100vh;
+  background: #444654;
+  background: white;
+  background: #efeeee;
+  border-bottom: 1px solid black;
+}
+
+.header {
+  width: 100%;
+  height: 315px;
+  background-image: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -20px;
+  border-radius: 0 0 25px 25px;
+  position: relative;
+}
+.header .header-top {
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.header .header-top .time {
+  font-size: 15px;
+  color: white;
+  font-weight: 420;
+  padding: 5px 30px;
+}
+.header .header-top .icon {
+  color: white;
+  font-weight: 500;
+  font-weight: 420;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header-top .icon span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin: 0 2px;
+  font-size: 20px;
+}
+.header .header-top .icon .fa-solid {
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.header .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .check .fa-solid {
+  font-size: 20px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 100%;
+}
+.header .caption-trader {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.header .caption-trader .title1 {
+  text-align: center;
+  font-size: 13.5px;
+  color: white;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.header .caption-trader .title2 {
+  letter-spacing: 2px;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: normal;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 2.5px;
+  margin-top: 10px;
+}
+.header .caption-trader button {
+  margin-top: 20px;
+  width: 130px;
+  height: 35px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background: white;
+  font-size: 16px;
+  color: blue;
+  color: #33518d;
+}
+.header .caption-trader button .fa-solid {
+  padding-right: 15px;
+}
+.header .user-trader {
+  overflow: hidden;
+  margin: 0 auto;
+  display: block;
+  width: 90%;
+  height: 110px;
+  position: absolute;
+  background: black;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  transform: translateY(-5%);
+  border-radius: 15px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.144) 0px 5px 15px;
+}
+.header .user-trader .to-account {
+  padding: 20px 10px;
+  padding-bottom: 0px;
+  font-size: 14px;
+  color: #989898;
+}
+.header .user-trader .layout-trader {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  padding: 0 5px;
+  overflow: hidden;
+}
+.header .user-trader .layout-trader .infor {
+  padding-left: 8px;
+}
+.header .user-trader .layout-trader img {
+  height: 18px;
+  margin-right: 10px;
+}
+.header .user-trader .layout-trader .name {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 20px;
+  line-height: 18px;
+}
+.header .user-trader .layout-trader .id-nh,
+.header .user-trader .layout-trader .id-stk {
+  line-height: 18px;
+  font-weight: 400;
+  font-size: 15px;
+  font-weight: 5000;
+}
+
+.container-trader {
+  overflow: hidden;
+  width: 90%;
+  min-height: 200px;
+  background: white;
+  margin: 0 auto;
+  margin-top: 61px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.147) 0px 5px 15px;
+  padding: 0px;
+  padding-top: 7px;
+  padding-bottom: 14px;
+}
+.container-trader .ctn1 {
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+}
+.container-trader .ctn1 .user-ctn1 h1 {
+  font-size: 14.5px;
+  font-weight: 500;
+  text-align: right;
+}
+.container-trader .ctn1 .user-ctn1 h1:nth-child(2) {
+  font-size: 16px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.container-trader .ctn1 .ctn-title {
+  font-size: 14px;
+  color: #828282;
+}
+.container-trader .ctn1 .ctn-user {
+  font-weight: 600;
+  height: 100%;
+  width: 150px;
+  font-weight: 550;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+}
+.container-trader .ctn1:nth-child(2), .container-trader .ctn1:nth-child(1) {
+  height: 50px;
+}
+.container-trader .ctn1:nth-child(3), .container-trader .ctn1:nth-child(5), .container-trader .ctn1:nth-child(4) {
+  height: 28px;
+}
+
+.button-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: center;
+  margin-top: 16px;
+}
+.button-user button {
+  background: white;
+  border: 0px;
+  background: none;
+  width: 170px;
+  border: 1px solid black;
+  display: block;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid #d0cfd4;
+  background: white;
+  color: #2e434e;
+  color: #526474;
+  font-size: 12px;
+}
+.button-user button + button {
+  margin-left: 10px;
+}
+.button-user button {
+  color: #2e434e;
+  color: #526474;
+  font-weight: 55550;
+}
+.button-user button .fa-regular {
+  font-size: 18px;
+  margin-right: 2px;
+}
+
+.button-out {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+}
+.button-out button {
+  width: 160px;
+  height: 50px;
+  border-radius: 5px;
+  display: block;
+  font-size: 15px;
+  border: none;
+  background: none;
+}
+.button-out button:nth-child(1) {
+  background: white;
+  border: 1px solid #414e68;
+  color: #414e68;
+  width: 170px;
+  margin-right: 15px;
+}
+.button-out button:nth-child(2) {
+  color: white;
+  background: #294c9e;
+  width: 170px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form button,
+.form input {
+  height: 50px;
+  padding: 10px;
+  margin: 5px;
+  font-size: 18px;
+}
+
+.outline-main {
+  position: relative;
+}
+
+.outline-main::before {
+  content: " ";
+  position: absolute;
+  width: 150px;
+  height: 5px;
+  background: black;
+  bottom: 5px;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=main.css.map */
